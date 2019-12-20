@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>MARS</h1>
+      <p>MARS STUFF</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+    </div>
+    <img src="{{ mars_vacation.Feature_Image_URL }}" alt="Sloth">
+    <h2>Headline:{{ mars_vacation.News_Headline }}:</h2>
+    <h3>Mars Info: {{ mars_vacation.News_Paragraph }}</h3>
+    <h3>Mars Weather: {{ mars_vacation.Mars_Current_Weather }}</h3>
+    <h3>Mars Factoids: {{ mars_vacation.Mars_Facts_Table }}</h3>
+    <h3>Mars Hemispheres: {{ mars_vacation.Mars_Hemispheres }}</h3>
+    <h3>Mars Date/Time: {{ mars_vacation.Mars_Date_Time }}</h3>
+
+
+  </div>
+  </div>
+</body>
+
+</html>
